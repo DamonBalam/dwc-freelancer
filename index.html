@@ -5,21 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desarrollador Web - BalamCode</title>
+
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
-      <h1>Arturo Saldivar - Desarrollador Web</h1>
+      <h1 class="titulo">
+        Arturo Saldivar
+        <span>Freelancer</span>
+      </h1>
     </header>
 
-    <nav>
-      <a href="#">Inicio</a>
-      <a href="#">Sobre mi</a>
-      <a href="#">Clientes</a>
-      <a href="#">Contactos</a>
-    </nav>
+    <div class="nav-bg">
+      <nav class="navegacion-principal contenedor">
+        <a href="#">Inicio</a>
+        <a href="#">Sobre mi</a>
+        <a href="#">Clientes</a>
+        <a href="#">Contactos</a>
+      </nav>
+    </div>
 
     <section>
-      <h2>Diseño y Desarrollo Web Freelancer</h2>
+      <h2 class="titulo">Diseño y Desarrollo Web <span>Freelancer</span></h2>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="icon icon-tabler icon-tabler-map-pin"
@@ -153,6 +169,31 @@
 
     <section>
       <h2>Contacto</h2>
+      <form>
+        <fieldset>
+          <legend>Contactános llenando todos los campos</legend>
+
+          <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="Tú Nombre" />
+          </div>
+
+          <div>
+            <label for="telefono">Teléfono</label>
+            <input type="tel" placeholder="Tú Teléfono" />
+          </div>
+
+          <div>
+            <label for="email">Correo</label>
+            <input type="email" placeholder="Tú E-mail" />
+          </div>
+
+          <label for="mensaje">Mensaje</label>
+          <textarea></textarea>
+
+          <button type="submit" value="Enviar">Enviar</button>
+        </fieldset>
+      </form>
     </section>
 
     <footer>
